@@ -81,15 +81,7 @@ namespace BlobStorage
 
         public void AddOrUpdateContainerMetadata(CloudBlobContainer cloudBlobContainer, string tag, string value)
         {
-
-            if (string.IsNullOrEmpty(cloudBlobContainer.Metadata[tag]))
-            {
-                cloudBlobContainer.Metadata.Add(tag, value);
-            }
-            else
-            {
-                cloudBlobContainer.Metadata[tag] = value;
-            }
+            cloudBlobContainer.Metadata.Add(tag, value);
         }
 
 

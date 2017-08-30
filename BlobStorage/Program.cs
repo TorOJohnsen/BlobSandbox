@@ -68,12 +68,12 @@ namespace BlobStorage
         static void Main(string[] args)
         {
 
-            //string guid = Guid.NewGuid().ToString();
-            string guid = "TorTestBlob";
+            string guid = Guid.NewGuid().ToString();
+            //string guid = "vaartest";
             var diBk = new BlobStorage();
 
-            FileInfo fileXml = new FileInfo(@"C:\dev\Bits\Azure-Samples\Files\5175-opplysninger-om-tiltakets-ytre-rammer.pdf");
-            FileInfo filePdf = new FileInfo(@"C:\dev\Bits\Azure-Samples\Files\AR3464204_2017-08-14.xml");
+            FileInfo fileXml = new FileInfo(@"..\..\..\Files\5175-opplysninger-om-tiltakets-ytre-rammer.pdf");
+            FileInfo filePdf = new FileInfo(@"..\..\..\Files\AR3464204_2017-08-14.xml");
 
 
             Task<CloudBlobContainer> taskContainer = diBk.SetUpBlobContainerAsync(guid);
