@@ -9,3 +9,5 @@ BlobStorage/StyleCop.cache
 *.nupkg
 packages/*
 *.ps1
+
+\.vs/BlobStorage/v15/sqlite3/storage\.ide
